@@ -1,0 +1,51 @@
+/* Comentário: Linha de código que será igonrado */
+
+/*Organizando o arquivo CSS */
+
+/*limpando o navegador*/
+
+/*Existem 3 valores que são universais no CSS:
+Inherit => Herança explícita;
+Initial => Força e redefinição de valores;
+Unset => Desabilita uma propriedade CSS.*/
+
+
+body, h1, h2, h3, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*Responsive Web Design */
+
+/*Mobile*/
+
+/*body > div{
+    width: 300px;
+    height: 300px;
+    margin: 5% auto;
+    border: solid 10px red;
+    padding: 50px 20px;
+}*/
+
+body{
+    background-color: #333;
+    color: #e4e4e4;
+}
+
+/*Quando a largura mínima for de 768px aplique este CSS */
+@media (min-width: 768px){
+    /*Especificidade CSS: Quanto mais específico o seletor , mais importante.*/ 
+    html body{
+        background-color: rgb(47, 170, 129);
+        color: initial;
+    }
+
+    body{
+        background-color: red;
+    }
+}
